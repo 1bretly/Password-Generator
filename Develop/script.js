@@ -23,11 +23,11 @@ function generatePassword() {
   console.log("You clicked the button!");
 
   // Define passwordLength with prompt
-  let passwordLength = (prompt("How many characters would you like your password to be? Between 8-128"));
+  let passwordLength = prompt("How many characters would you like your password to be? Between 8-128");
 
   while (passwordLength <= 7 || passwordLength >= 129) {
     alert("Your password length must be between 8-128 characters!");
-    let passwordLength = (prompt("How many characters would you like your password to be? Between 8-128"));
+    passwordLength = prompt("How many characters would you like your password to be? Between 8-128");
   }
   // Confirmation on password length
   alert(`Your password will have ${passwordLength} characters`);
