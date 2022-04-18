@@ -73,8 +73,6 @@ function generatePassword() {
     passwordCharacters = passwordCharacters.concat(specialCharacters)
   }
 
-  console.log(passwordCharacters);
-
   // Empty string that will be filled by for loop outcome
   let randomPassword = ""
 
